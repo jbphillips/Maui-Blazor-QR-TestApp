@@ -1,7 +1,7 @@
 # QR Reader for MAUI + Blazor Demo
 
 ## Project Life Purpose:
-MAUI and Blazor hybrid demo shows a working relationship between a MAUI component and Blazor
+MAUI and Blazor hybrid demo shows a working relationship between a MAUI component and Blazor view
 Using Zxing although not .NET 8.0 ready
 
 ## Design Goals:
