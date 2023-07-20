@@ -56,18 +56,6 @@
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
-      <PackageReference Include="ZXing.Net.Maui.Jgdev">
-        <Version>1.0.5</Version>
-      </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)' == 'net7.0-maccatalyst'">
-      <PackageReference Include="ZXing.Net.Maui.Jgdev">
-        <Version>1.0.5</Version>
-      </PackageReference>
-    </ItemGroup>
-
     <ItemGroup>
       <ProjectReference Include="..\..\ZXing.Net.Maui\ZXing.Net.MAUI.Comet\ZXing.Net.MAUI.Comet.csproj" />
       <ProjectReference Include="..\ZXing.Net.MAUI.Controls\ZXing.Net.MAUI.Controls.csproj" />
