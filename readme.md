@@ -6,7 +6,7 @@
 - implement MudBlazor
 - 
 
-![Screenshot](https://github.com/jbphillips/Maui-Blazor-QR-TestApp/tree/master/Screenshot.png?raw=true)
+![Screenshot](https://github.com/jbphillips/Maui-Blazor-QR-TestApp/blob/master/Screenshot.png?raw=true)
 
 ## Design Goals:
 - CameraBarcodeReaderView is created at runtime when needed to read a QR code
