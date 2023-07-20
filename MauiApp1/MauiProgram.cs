@@ -3,6 +3,7 @@ using MauiApp1.Data;
 using ZXing.Net.Maui;
 using Microsoft.Maui.LifecycleEvents;
 using MauiApp1.Services;
+using MudBlazor.Services;
 
 namespace MauiApp1;
 
@@ -65,6 +66,8 @@ public static class MauiProgram
 #endif
         builder.Services.AddSingleton<QRCodeService>();
         builder.Services.AddSingleton<WeatherForecastService>();
+
+        builder.Services.AddMudServices();
 
         return builder.Build();
 	}
