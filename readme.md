@@ -1,8 +1,9 @@
 # QR Reader for MAUI + Blazor Demo
 
 ## Project Life Purpose:
-MAUI and Blazor hybrid demo shows a working relationship between a MAUI component and Blazor view
-Using Zxing although not .NET 8.0 ready
+- MAUI and Blazor hybrid demo shows a working relationship between a MAUI component and Blazor view
+- Using Zxing although not .NET 8.0 ready
+- implement MudBlazor
 
 ## Design Goals:
 - CameraBarcodeReaderView is created at runtime when needed to read a QR code
@@ -17,4 +18,6 @@ Using Zxing although not .NET 8.0 ready
 - Zxing libraries - updating them manually to .NET 7.0 and 8.0 for trial
 - Blazor MAUI Hybrid .NET 7.0
 - QR service
+
+References: https://github.com/Redth/ZXing.Net.Maui and https://github.com/gonzalorf/Maui-Blazor-QRReader
 

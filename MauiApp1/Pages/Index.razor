@@ -1,12 +1,24 @@
 ﻿@page "/"
 @inject QRCodeService qrCodeReader
 
-<h1>QR Reader</h1>
+<div style="margin-top:100px">
+    <MudAlert Severity="Severity.Success">QR Detected: @qrDetected</MudAlert>
 
-<p>QR Detected: @qrDetected</p>
+    <MudStack>
+        <MudItem Style="margin:0 auto;">
+            <MudText Typo="Typo.h6" GutterBottom="true">QR Reader</MudText>
+        </MudItem>
+        <MudItem Style="margin:0 auto;">
+            <MudImage Src="/golf_your_best_logo.png" Alt="" Width="250" Height="250" Class="rounded-lg mb-6" />
+        </MudItem>
 
-<button @onclick=@Scan>Start Scanning</button>
-<button @onclick=@Stop>Stop</button>
+        <MudItem Style="margin:0 auto;">
+            <MudButton OnClick="@Scan" Variant="Variant.Filled" Color="Color.Primary">Start Scanning</MudButton>
+            <MudButton OnClick="@Stop" Variant="Variant.Filled" Color="Color.Primary">Stop</MudButton>
+
+        </MudItem>
+    </MudStack>
+</div>
 
 
 @code{

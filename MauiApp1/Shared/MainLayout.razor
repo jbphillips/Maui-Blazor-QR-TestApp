@@ -1,17 +1,36 @@
 ﻿@inherits LayoutComponentBase
+@inject ISnackbar Snackbar
 
-<div class="page">
-	<div class="sidebar">
-		<NavMenu />
-	</div>
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudThemeProvider  />
 
-	<main>
-		<div class="top-row px-4">
-			<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-		</div>
+<MudLayout>
+    <MudAppBar Color="Color.Primary" Class="mb-60">        
+        <MudItem xs="8">
+            <MudText Class="d-flex align-center justify-center mud-width-full py-8" style="color:#ffffff; font-weight: bold; font-size: 30px" >MAUI - Blazor</MudText>
+        </MudItem>  
+    </MudAppBar>
+   
+    <MudMainContent Class="py-0 my-0">
+        <MudStack>
+            <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Class="my-0 mainContainer" Style="margin:0 auto;">
+                @Body
+            </MudContainer>
+        </MudStack>
+    </MudMainContent>
+   
+    <BottomAppBar />
 
-		<article class="content px-4">
-			@Body
-		</article>
-	</main>
-</div>
+</MudLayout>
+
+
+@code{
+    bool open = false;
+
+    void ToggleDrawer()
+    {
+        open = !open;
+    }
+
+}
